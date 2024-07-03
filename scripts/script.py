@@ -46,6 +46,9 @@ def main():
     excel_path = './slo-excel-data.xlsx'
     input_docx_path = './slo-template-edited.docx'
 
+    os.makedirs('./output_docx', exist_ok=True)
+    os.makedirs('./inputs_revised', exist_ok=True)
+
     # replacements = extract_replacements(excel_path)
 
     # replacements['koordinat'] = generate_random_coordinate()
