@@ -48,6 +48,7 @@ def main():
 
     os.makedirs('./output_docx', exist_ok=True)
     os.makedirs('./inputs_revised', exist_ok=True)
+    os.makedirs('./inputs', exist_ok=True)
 
     # replacements = extract_replacements(excel_path)
 
@@ -82,11 +83,11 @@ def main():
         output_docx_path = f'./output_docx/output_{i}.docx'
         replace_text_in_docx(input_docx_path, replacements, output_docx_path)
 
-        # output_pdf_path = f'output_{i}.pdf'
-        # convert_docx_to_pdf(output_docx_path, output_pdf_path)
+        output_pdf_path = f'./output_docx/output_{i}.pdf'
+        convert_docx_to_pdf(output_docx_path, output_pdf_path)
 
-        # output_jpeg_path = f'./inputs/input_{i}.jpeg'
-        # convert_pdf_to_jpeg(output_pdf_path, output_jpeg_path)
+        output_jpeg_path = f'./inputs/input_{i}.jpeg'
+        convert_pdf_to_jpeg(output_pdf_path, output_jpeg_path)
 
         # import aspose.words as aw
 
