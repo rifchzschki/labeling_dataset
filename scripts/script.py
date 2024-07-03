@@ -81,7 +81,7 @@ def main():
             replacements['nama_provinsi'] = replacements['nama_provinsi'][:8]
 
         output_docx_path = f'./output_docx/output_{i}.docx'
-        replace_text_in_docx(input_docx_path, replacements, output_docx_path)
+        # replace_text_in_docx(input_docx_path, replacements, output_docx_path)
 
         output_pdf_path = f'./output_docx/output_{i}.pdf'
         convert_docx_to_pdf(output_docx_path, output_pdf_path)
