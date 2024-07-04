@@ -95,7 +95,7 @@ PostProcess:
   - Student
   - Teacher
   key: backbone_out
-  class_path: train_data/class_list.txt
+  class_path: train_data/XFUND/class_list_xfun.txt
 Metric:
   name: DistillationMetric
   base_metric_name: VQASerTokenMetric
@@ -116,7 +116,7 @@ Train:
     - VQATokenLabelEncode:
         contains_re: false
         algorithm: LayoutXLM
-        class_path: train_data/class_list.txt
+        class_path: train_data/XFUND/class_list_xfun.txt
         order_method: ppocr-order
         augment_bbox: true
     - VQATokenPad:
@@ -166,7 +166,7 @@ Eval:
     - VQATokenLabelEncode:
         contains_re: false
         algorithm: LayoutXLM
-        class_path: train_data/class_list.txt
+        class_path: train_data/XFUND/class_list_xfun.txt
         order_method: ppocr-order
     - VQATokenPad:
         max_seq_len: 512

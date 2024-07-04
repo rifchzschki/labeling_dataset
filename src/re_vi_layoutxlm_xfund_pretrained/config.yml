@@ -104,7 +104,7 @@ Train:
     - VQATokenLabelEncode:
         contains_re: true
         algorithm: LayoutXLM
-        class_path: train_data/class_list.txt
+        class_path: train_data/XFUND/class_list_xfun.txt
         use_textline_bbox_info: true
         order_method: ppocr-order
     - VQATokenPad:
@@ -157,7 +157,7 @@ Eval:
     - VQATokenLabelEncode:
         contains_re: true
         algorithm: LayoutXLM
-        class_path: train_data/class_list.txt
+        class_path: train_data/XFUND/class_list_xfun.txt
         use_textline_bbox_info: true
         order_method: ppocr-order
     - VQATokenPad:
