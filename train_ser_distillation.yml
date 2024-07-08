@@ -1,6 +1,6 @@
 Global:
   use_gpu: True
-  epoch_num: &epoch_num 200
+  epoch_num: &epoch_num 150
   log_smooth_window: 10
   print_batch_step: 10
   save_model_dir: ./output/ser_vi_layoutxlm_xfund_zh_udml
@@ -142,7 +142,7 @@ Train:
   loader:
     shuffle: True
     drop_last: False
-    batch_size_per_card: 4
+    batch_size_per_card: 8
     num_workers: 4
 
 Eval:
