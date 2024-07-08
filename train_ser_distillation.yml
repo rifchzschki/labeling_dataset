@@ -99,7 +99,7 @@ PostProcess:
   name: DistillationSerPostProcess
   model_name: ["Student", "Teacher"]
   key: backbone_out
-  class_path: &class_path train_data/XFUND/class_list_xfun.txt
+  class_path: &class_path labeling_dataset/train_data/XFUND/class_list_xfun.txt
 
 Metric:
   name: DistillationMetric
