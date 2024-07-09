@@ -17,7 +17,7 @@ class YOLORunner:
         self.masks = results.masks.xy
         self.box = results.boxes
 
-        _, corner_points = getBound(self.masks[0])
+        corner_points = getBound(self.masks[0])
 
         return corner_points
     
