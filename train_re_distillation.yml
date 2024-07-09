@@ -108,7 +108,7 @@ Train:
       - VQATokenLabelEncode: # Class handling label
           contains_re: True
           algorithm: *algorithm
-          class_path: &class_path labeling_dataset/train_data/XFUND/class_list_xfun.txt
+          class_path: &class_path labeling_dataset/class_list_xfun.txt
           use_textline_bbox_info: &use_textline_bbox_info True
           # [None, "tb-yx"]
           order_method: &order_method "tb-yx"
