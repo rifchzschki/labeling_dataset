@@ -1,6 +1,10 @@
-import time
+import time, os
 import roboflow as rb
 import yolov8 as yv8
+
+# loop all the images in the folder
+for os.path in os.listdir('../data/input'):
+    print
 
 image_path = '../assets/your_image.jpg'
 model_path = '../model/best.pt'
