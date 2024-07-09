@@ -93,7 +93,7 @@ def draw(path_img, initial_points):
 
     # Get coordinates of the points after the plot is closed
     coordinates = draggable_points.get_points()
-    print("Coordinates of the 4 points:", coordinates)
+
 
 # Centroid: (642.5226478830568, 357.9047337726275)
 # Top-left corner: (236.0, 84.0), Bottom-right corner: (1050.0, 640.0)

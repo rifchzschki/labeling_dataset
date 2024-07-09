@@ -2,7 +2,6 @@ import math
 from shapely.geometry import Polygon
 
 def getBound(coordinates):
-    print(coordinates)
     polygon = Polygon(coordinates)
     centroid = polygon.centroid
     # centroid_coords = (centroid.x, centroid.y)
