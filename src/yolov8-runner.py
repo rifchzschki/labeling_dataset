@@ -3,17 +3,19 @@ from ultralytics import YOLO
 from utils import getBound
 
 class YOLORunner:
-    def __init__(self):
+    def __init__(self, applyBlackFilter=False):
         print('Loading YOLOv8 model...')
         self.model = YOLO(f'../model/yolov8n-300epochs.pt')
         self.input_path = '../data/input/'
-        self.output_path = '../data/output/'
+        self.output_path_perspective_corrected = '../data/output/'
+        self.output_path_segmentation = '../data/output_segmentation/'
         self.masks = None
         self.box = None
         self.current_image = None
+        self.applyBlackFilter = False
 
-    def getCornerPoints(self, image_path):
-        image = cv2.imread(image_path)
+    def getCornerPoints(self):
+        image = self.current_image
         results = self.model(image)[0]
         self.masks = results.masks.xy
         self.box = results.boxes
@@ -22,8 +24,8 @@ class YOLORunner:
 
         return corner_points
     
-    def draw(self, image_path, corner_points : list[tuple[float, float]]):
-        image = self.current_image
+    def draw(self, corner_points : list[tuple[float, float]]):
+        image = self.current_image.copy()
 
         # Color for the class (BGR format)
         color = random.choices(range(256), k=3)
@@ -48,7 +50,7 @@ class YOLORunner:
         
         return image
 
-    def correctPerspective(self, image, points):
+    def correctPerspective(self, points):
         r= np.zeros((4,2), dtype="float32")
         s = np.sum(points, axis=1);r[0] = points[np.argmin(s)];r[2] = points[np.argmax(s)]
         d = np.diff(points, axis=1);r[1] = points[np.argmin(d)];r[3] = points[np.argmax(d)]
@@ -61,13 +63,13 @@ class YOLORunner:
         maxH = max(int(hA), int(hB))
         ds= np.array([[0,0],[maxW-1, 0],[maxW-1, maxH-1],[0, maxH-1]], dtype="float32")
         transformMatrix = cv2.getPerspectiveTransform(r,ds)
-        scan = cv2.warpPerspective(image, transformMatrix, (maxW, maxH))
+        scan = cv2.warpPerspective(self.current_image, transformMatrix, (maxW, maxH))
 
         return scan
     
-    def filter_black(image_path, output_path):
+    def filter_black(self):
         # Membaca gambar
-        image = cv2.imread(image_path)
+        image = self.current_image
         
         # Konversi gambar ke skala abu-abu
         gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -79,22 +81,25 @@ class YOLORunner:
         # # Inversi gambar biner untuk membuat latar belakang putih dan objek hitam
         inverted_image = cv2.bitwise_not(binary_image)
         
-        # Menyimpan gambar hasil
-        cv2.imwrite(output_path, inverted_image)
+        self.current_image = inverted_image
         
-    def saveImage(self, image_path):
-        corner_points = self.getCornerPoints(self.input_path + image_path)
-
-        # corredted_image = self.correctPerspective(self.current_image, corner_points)
+    def processImage(self, image_path):
+        corner_points = self.getCornerPoints()
 
         # Draw and save the image
-        cv2.imwrite(self.output_path + image_path, self.draw(self.input_path + image_path, corner_points))
+        cv2.imwrite(self.output_path_segmentation + image_path, self.draw(corner_points))
+
+        if self.applyBlackFilter:
+            self.filter_black()
+        
+        cv2.imwrite(self.output_path_perspective_corrected + image_path, self.correctPerspective(corner_points))
+
     
     def run(self):
         for image_path in os.listdir(self.input_path):
             print(f'Processing {image_path}...')
             self.current_image = cv2.imread(self.input_path + image_path)
-            self.saveImage(image_path)
+            self.processImage(image_path)
 
 if __name__ == '__main__':
     runner = YOLORunner()
