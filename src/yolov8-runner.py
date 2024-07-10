@@ -1,4 +1,4 @@
-import cv2, os, numpy as np, random
+import cv2, os, numpy as np, random, time
 from ultralytics import YOLO
 from utils import getBound
 
@@ -21,9 +21,26 @@ class YOLORunner:
         self.masks = results.masks.xy
         self.box = results.boxes
 
-        corner_points = getBound(self.masks[0])
+        # Menghitung convex hull dari titik-titik
+        hull = cv2.convexHull(self.masks[0])
+        hull_points = hull.reshape(-1, 2)
 
-        return corner_points
+        # Mencari kombinasi 4 titik yang membentuk area terbesar
+        max_area = 0
+        best_quad = None
+        n = len(hull_points)
+
+        for i in range(n):
+            for j in range(i + 1, n):
+                for k in range(j + 1, n):
+                    for l in range(k + 1, n):
+                        quad = np.array([hull_points[i], hull_points[j], hull_points[k], hull_points[l]])
+                        area = cv2.contourArea(quad)
+                        if area > max_area:
+                            max_area = area
+                            best_quad = quad
+
+        return best_quad
     
     def draw(self, corner_points : list[tuple[float, float]]):
         image = self.current_image.copy()
@@ -97,10 +114,12 @@ class YOLORunner:
 
     
     def run(self):
+        current_time = time.time()
         for image_path in os.listdir(self.input_path):
             print(f'Processing {image_path}...')
             self.current_image = cv2.imread(self.input_path + image_path)
             self.processImage(image_path)
+        print(f'\n\nProcessing finished in {time.time() - current_time} seconds')
 
 if __name__ == '__main__':
     runner = YOLORunner()
