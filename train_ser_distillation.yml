@@ -33,7 +33,7 @@ Architecture:
         # one of base or vi
         mode: vi
         checkpoints:
-        num_classes: &num_classes 7
+        num_classes: &num_classes 5
     Student:
       pretrained:
       freeze_params: false
