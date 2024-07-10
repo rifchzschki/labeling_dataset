@@ -5,18 +5,19 @@ from utils import getBound
 class YOLORunner:
     def __init__(self, applyBlackFilter=False):
         print('Loading YOLOv8 model...')
-        self.model = YOLO(f'../model/yolov8n-300epochs.pt')
+        self.model = YOLO(f'../model/yolo8n-300epochs-v2.pt')
         self.input_path = '../data/input/'
         self.output_path_perspective_corrected = '../data/output/'
         self.output_path_segmentation = '../data/output_segmentation/'
         self.masks = None
         self.box = None
         self.current_image = None
-        self.applyBlackFilter = False
+        self.applyBlackFilter = applyBlackFilter
 
     def getCornerPoints(self):
         image = self.current_image
         results = self.model(image)[0]
+        
         self.masks = results.masks.xy
         self.box = results.boxes
 
