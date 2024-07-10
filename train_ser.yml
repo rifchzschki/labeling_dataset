@@ -33,7 +33,7 @@ Architecture:
     checkpoints:
     # one of base or vi
     mode: vi
-    num_classes: &num_classes 7
+    num_classes: &num_classes 5
 
 Loss:
   name: VQASerTokenLayoutLMLoss
@@ -55,7 +55,7 @@ Optimizer:
 
 PostProcess:
   name: VQASerTokenLayoutLMPostProcess
-  class_path: &class_path labeling_dataset/train_data/XFUND/class_list_xfun.txt
+  class_path: &class_path labeling_dataset/class_list_xfun.txt
 
 Metric:
   name: VQASerTokenMetric
