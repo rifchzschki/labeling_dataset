@@ -4,7 +4,7 @@ from utils import getBound
 
 class YOLORunner:
     def __init__(self, applyBlackFilter=False):
-        print('Loading YOLOv8 model...')
+        print('Loading YOLO model...')
         self.model = YOLO(f'../model/yolo8n-300epochs-v2.pt')
         self.input_path = '../data/input/'
         self.output_path_perspective_corrected = '../data/output/'
@@ -17,6 +17,9 @@ class YOLORunner:
     def getCornerPoints(self):
         image = self.current_image
         results = self.model(image)[0]
+
+        if len(results) == 0:
+            return []
         
         self.masks = results.masks.xy
         self.box = results.boxes
@@ -62,6 +65,9 @@ class YOLORunner:
             
             # Blend the overlay with the original image
             cv2.addWeighted(overlay, opacity, image, 1 - opacity, 0, image)
+        
+        if len(corner_points) == 0:
+            return image
         
         for i in range(4):
             cv2.circle(image, (int(corner_points[i][0]), int(corner_points[i][1])), 30, (0, 0, 255), 20)
@@ -110,7 +116,7 @@ class YOLORunner:
         if self.applyBlackFilter:
             self.filter_black()
         
-        cv2.imwrite(self.output_path_perspective_corrected + image_path, self.correctPerspective(corner_points))
+        cv2.imwrite(self.output_path_perspective_corrected + image_path, self.correctPerspective(corner_points) if len(corner_points) else self.current_image)
 
     
     def run(self):
