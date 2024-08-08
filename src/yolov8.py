@@ -1,7 +1,7 @@
 import cv2
 from ultralytics import YOLO
 from drawDots import draw
-from utils import getBound
+from main.utils import getBound
 
 def run(image_path):
     model = YOLO(f'../model/best.pt')

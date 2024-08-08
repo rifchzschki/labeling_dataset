@@ -1,6 +1,6 @@
 from inference_sdk import InferenceHTTPClient
 import numpy as np
-from utils import getBound
+from main.utils import getBound
 from drawDots import draw
 
 def run(image_path):

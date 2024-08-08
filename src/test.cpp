@@ -40,8 +40,8 @@ double precisionString(string str, string pattern){
 }
 
 int main(){
-    string S1 = "KapasitasArusgawaiproteksi(dalamAmpere)";
-    string S2 = "KapassArusgawaiproteksi(dalamAmpere)";
+    string S1 = "Jalan ganesha 10 Institut Teknologi Bandung";
+    string S2 = "Jalan ganosha 10 Instltut Teknologl Bandung";
 
     cout << lcs(S1, S2) << endl;
     // cout << S1.length() << endl;

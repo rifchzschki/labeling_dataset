@@ -1,21 +1,22 @@
-import cv2, os, numpy as np, random, time
+import cv2, numpy as np, random
 from ultralytics import YOLO
-from main.utils import getBound
 
-class YOLORunner:
-    def __init__(self, applyBlackFilter=False):
-        print('Loading YOLO model...')
-        self.model = YOLO(f'../model/yolo8n-300epochs-v2.pt')
-        self.input_path = '../data/input/'
-        self.output_path_perspective_corrected = '../data/output/'
-        self.output_path_segmentation = '../data/output_segmentation/'
+class Segmentation:
+    def __init__(self, image_name, image, isInvers=False):
+        self.model = YOLO('../../model/yolo8n-300epochs-v2.pt')
+        self.image_name = image_name
         self.masks = None
         self.box = None
-        self.current_image = None
-        self.applyBlackFilter = applyBlackFilter
-
+        self.current_image = image
+        self.image_input_path = '../../data/input/' + image_name
+        self.output_path_perspective_corrected = '../../data/output/' + image_name
+        self.tmp_path = '../../data/tmp/' + image_name
+        self.output_path_segmentation = '../../data/output_segmentation/' + image_name
+        self.isInvers = isInvers
+    
     def getCornerPoints(self):
-        image = self.current_image
+        # image = self.current_image
+        image = cv2.imread(self.image_input_path)
         results = self.model(image)[0]
 
         if len(results) == 0:
@@ -43,7 +44,14 @@ class YOLORunner:
                             max_area = area
                             best_quad = quad
 
+        if(self.isInvers):
+            for i in range(len(best_quad)):
+                best_quad[i][0] = best_quad[i][0]*2
+                best_quad[i][1] = best_quad[i][1]*2
+
         return best_quad
+    
+
     
     def draw(self, corner_points : list[tuple[float, float]]):
         image = self.current_image.copy()
@@ -91,42 +99,19 @@ class YOLORunner:
 
         return scan
     
-    def filter_black(self):
-        # Membaca gambar
-        image = self.current_image
-        
-        # Konversi gambar ke skala abu-abu
-        gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-        
-        # Binarisasi gambar (thresholding)
-        # Jika piksel lebih gelap dari threshold tertentu, akan dianggap hitam, sisanya akan menjadi putih
-        _, binary_image = cv2.threshold(gray_image, 100, 255, cv2.THRESH_BINARY)
-        
-        # # Inversi gambar biner untuk membuat latar belakang putih dan objek hitam
-        inverted_image = cv2.bitwise_not(binary_image)
-        
-        self.current_image = inverted_image
-        
-    def processImage(self, image_path):
+    def processImage(self):
         corner_points = self.getCornerPoints()
 
         # Draw and save the image
-        cv2.imwrite(self.output_path_segmentation + image_path, self.draw(corner_points))
-
-        if self.applyBlackFilter:
-            self.filter_black()
-        
-        cv2.imwrite(self.output_path_perspective_corrected + image_path, self.correctPerspective(corner_points) if len(corner_points) else self.current_image)
-
+        cv2.imwrite(self.output_path_segmentation, self.draw(corner_points))
+        self.current_image = self.correctPerspective(corner_points) if len(corner_points) else self.current_image
+        cv2.imwrite(self.output_path_perspective_corrected, self.current_image)
     
     def run(self):
-        current_time = time.time()
-        for image_path in os.listdir(self.input_path):
-            print(f'Processing {image_path}...')
-            self.current_image = cv2.imread(self.input_path + image_path)
-            self.processImage(image_path)
-        print(f'\n\nProcessing finished in {time.time() - current_time} seconds')
-
-if __name__ == '__main__':
-    runner = YOLORunner()
-    runner.run()
+        # current_time = time.time()
+        print(f'Segment {self.image_name}...')
+        self.processImage()
+        # cv2.imshow("uhuy", self.current_image)
+        # cv2.waitKey(0)
+        return self.current_image
+        # print(f'\n\nProcessing finished in {time.time() - current_time} seconds')
