@@ -14,8 +14,8 @@ int lcs(string& text1, string& text2)
     // initializing 2 vectors of size m
     vector<int> prev(m + 1, 0), cur(m + 1, 0);
 
-    for (int idx2 = 0; idx2 < m + 1; idx2++)
-        cur[idx2] = 0;
+    // for (int idx2 = 0; idx2 < m + 1; idx2++)
+    //     cur[idx2] = 0;
 
     for (int idx1 = 1; idx1 < n + 1; idx1++) {
         for (int idx2 = 1; idx2 < m + 1; idx2++) {
@@ -41,7 +41,17 @@ double precisionString(string str, string pattern){
 
 int main(){
     string S1 = "Jalan ganesha 10 Institut Teknologi Bandung";
-    string S2 = "Jalan ganosha 10 Instltut Teknologl Bandung";
+    string S2 = "Jalan ganosha% 10- Instltut. _:Teknologl Bandung";
+
+    auto removeNonAlphanumeric = [](std::string& str) {
+        str.erase(std::remove_if(str.begin(), str.end(), [](char c) {
+            return !std::isalnum(c);
+        }), str.end());
+    };
+
+    removeNonAlphanumeric(S1);
+    removeNonAlphanumeric(S2);
+    // cout << S2 << endl;
 
     cout << lcs(S1, S2) << endl;
     // cout << S1.length() << endl;
