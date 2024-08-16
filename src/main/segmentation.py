@@ -44,10 +44,10 @@ class Segmentation:
                             max_area = area
                             best_quad = quad
 
-        if(self.isInvers):
-            for i in range(len(best_quad)):
-                best_quad[i][0] = best_quad[i][0]*2
-                best_quad[i][1] = best_quad[i][1]*2
+        # if(self.isInvers):
+        #     for i in range(len(best_quad)):
+        #         best_quad[i][0] = best_quad[i][0]*2
+        #         best_quad[i][1] = best_quad[i][1]*2
 
         return best_quad
     
