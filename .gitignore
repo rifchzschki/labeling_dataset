@@ -12,3 +12,4 @@ venv
 /src/__pycache__
 /src/main/__pycache__
 data.zip
+/.python-version
