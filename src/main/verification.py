@@ -13,7 +13,7 @@ def runCalculate( target, result):
         file1.write("%s\n" % result.stdout)
         file1.write("%s\n" % result.stderr)
 
-def run(engine, target, result):
+def run(target, result):
         print("Verification process...")
         current_time = time.time()
         runCalculate(tmp+target, tmp+result)
