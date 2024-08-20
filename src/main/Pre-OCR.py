@@ -25,7 +25,7 @@ if __name__ == '__main__':
     parser.add_argument("arg2", type=str, help="image_path")
     parser.add_argument("arg3", type=str, help="isInvers")
     args = parser.parse_args()
-    if(args.arg2 == "y"):
-        Main(args.arg1, True)
+    if(args.arg3 == "y"):
+        Main(args.arg1, args.arg2, True)
     else:
-        Main(args.arg1, False)
+        Main(args.arg1, args.arg2, False)
