@@ -29,7 +29,7 @@ if __name__ == "__main__":
         try:
             print("Menjalankan OCR engine...")
             current_time = time.time()
-            subprocess.run(["../../.venv/Scripts/python", "engine.py", dir_tmp+str(args.image_name), dir_tmp+str(args.output)], check=True)
+            subprocess.run(["../../.venv/Scripts/python", "engine.py", dir_tmp+str(os.path.basename(args.image_name)), dir_tmp+str(os.path.basename(args.output))], check=True)
             print(f"Duration: {time.time()-current_time}")
             print("OCR engine selesai.")
         except subprocess.CalledProcessError as e:
@@ -39,7 +39,7 @@ if __name__ == "__main__":
         try:
             print("Menjalankan verifikasi...")
             current_time = time.time()
-            subprocess.run(["../../.venv/Scripts/python", "verification.py", str(args.target), str(args.output), str(args.engine)], check=True)
+            subprocess.run(["../../.venv/Scripts/python", "verification.py", str(args.target), dir_tmp+str(os.path.basename(args.output)), str(args.engine)], check=True)
             print(f"Duration: {time.time()-current_time}")
             print("OCR engine selesai.")
         except subprocess.CalledProcessError as e:
