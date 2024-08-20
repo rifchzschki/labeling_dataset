@@ -10,13 +10,13 @@ class Main():
         self.image = cv2.imread(self.image_path)
 
         if(not invers):
-            self.seg = Segmentation(image_name, self.image).run()
+            self.seg = Segmentation(image_name, image_path, self.image).run()
             self.prep = Preprocessing(self.seg).run()
             cv2.imwrite(self.image_path_after,self.prep)
         else:
             self.prep = Preprocessing(self.image).run()
             cv2.imwrite(self.image_path_after,self.prep)
-            self.seg = Segmentation(image_name, cv2.imread(self.image_path_after), True).run()
+            self.seg = Segmentation(image_name, image_path, cv2.imread(self.image_path_after), True).run()
             cv2.imwrite(self.image_path_after,self.seg)
 
 if __name__ == '__main__':
