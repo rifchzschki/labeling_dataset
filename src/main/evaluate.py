@@ -21,7 +21,20 @@ def lcs(text1, text2):
 def precision_string(str, pattern):
     return lcs(str, pattern) / len(pattern)
 
-def calculate_matrix(list_str, list_pattern):
+def calculate_matrix(str_file_path, pattern_file_path):
+    list_str = []
+    list_pattern = []
+
+    with open(str_file_path, 'r') as file:
+        for line in file:
+            print(line)
+            list_pattern.append(remove_non_alphanumeric(line))
+    
+    with open(pattern_file_path, 'r') as file:
+        for line in file:
+            print(line)
+            list_str.append(remove_non_alphanumeric(line))
+
     i = 0
     idx_found = 0
     prec_all = 0
