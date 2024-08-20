@@ -22,7 +22,8 @@ class Main():
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Pre-OCR")
     parser.add_argument("arg1", type=str, help="image_name")
-    parser.add_argument("arg2", type=str, help="isInvers")
+    parser.add_argument("arg2", type=str, help="image_path")
+    parser.add_argument("arg3", type=str, help="isInvers")
     args = parser.parse_args()
     if(args.arg2 == "y"):
         Main(args.arg1, True)
