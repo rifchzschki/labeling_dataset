@@ -8,7 +8,7 @@ class Segmentation:
         self.masks = None
         self.box = None
         self.current_image = image
-        self.image_input_path = image_name
+        self.image_input_path = '../../data/input/' + image_name
         self.output_path_perspective_corrected = '../../data/output/' + image_name
         self.tmp_path = '../../data/tmp/' + image_name
         self.output_path_segmentation = '../../data/output_segmentation/' + image_name
