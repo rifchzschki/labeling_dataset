@@ -1,4 +1,4 @@
-import argparse, subprocess, time
+import argparse, subprocess, time, os
 
 dir_tmp = '../../data/tmp/'
 
@@ -19,7 +19,7 @@ if __name__ == "__main__":
         try:
             print("Menjalankan Pre-OCR...")
             current_time = time.time()
-            subprocess.run(["../../.venv/Scripts/python", "Pre-OCR.py", str(args.image_name), str(args.invers)], check=True)
+            subprocess.run(["../../.venv/Scripts/python", "Pre-OCR.py", str(os.path.basename(args.image_name)), str(args.image_name), str(args.invers)], check=True)
             print(f"Duration: {time.time()-current_time}")
             print("Pre-OCR selesai.")
         except subprocess.CalledProcessError as e:

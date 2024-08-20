@@ -2,13 +2,13 @@ import cv2, numpy as np, random
 from ultralytics import YOLO
 
 class Segmentation:
-    def __init__(self, image_name, image, isInvers=False):
+    def __init__(self, image_name, image_path, image, isInvers=False):
         self.model = YOLO('../../model/yolo8n-300epochs-v2.pt')
         self.image_name = image_name
         self.masks = None
         self.box = None
         self.current_image = image
-        self.image_input_path = '../../data/input/' + image_name
+        self.image_input_path = image_path
         self.output_path_perspective_corrected = '../../data/output/' + image_name
         self.tmp_path = '../../data/tmp/' + image_name
         self.output_path_segmentation = '../../data/output_segmentation/' + image_name

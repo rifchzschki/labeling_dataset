@@ -3,9 +3,9 @@ from preprocessing import Preprocessing
 import time, argparse
 
 class Main():
-    def __init__(self, image_name, invers=False):
+    def __init__(self, image_name, image_path, invers=False):
         import cv2
-        self.image_path = '../../data/input/' + image_name
+        self.image_path = image_path
         self.image_path_after = '../../data/tmp/' + image_name
         self.image = cv2.imread(self.image_path)
 
