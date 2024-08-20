@@ -5,12 +5,13 @@ tmp = "../../data/tmp/"
 
 def runCalculate( target, result):
     # Menjalankan program C++ dengan kedua file sebagai argumen
-    result = calculate_matrix(target, result)
+    hmean, validity = calculate_matrix(target, result)
 
     # Menampilkan output dari program C++
-    with open(tmp+"hasil.txt", 'w') as file1:
-        file1.write(f'Processing ...')
-        file1.write(result)
+    with open(tmp+"hasil.txt", 'a') as file1:
+        file1.write(f'Processing ... --> {target}\n')
+        file1.write("Hmean: "+ str(hmean)+"\n")
+        file1.write(validity+"\n")
 
 def run(target, result):
         print("Verification process...")
