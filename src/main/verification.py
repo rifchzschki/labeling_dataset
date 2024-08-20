@@ -10,8 +10,7 @@ def runCalculate( target, result):
     # Menampilkan output dari program C++
     with open(tmp+"hasil.txt", 'w') as file1:
         file1.write(f'Processing ...')
-        file1.write("%s\n" % result.stdout)
-        file1.write("%s\n" % result.stderr)
+        file1.write(result)
 
 def run(target, result):
         print("Verification process...")

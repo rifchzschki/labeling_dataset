@@ -26,6 +26,7 @@ def calculate_matrix(list_str, list_pattern):
     idx_found = 0
     prec_all = 0
     mul = 0
+    isFake = False
 
     while i < len(list_pattern):
         prec = 0
@@ -44,8 +45,7 @@ def calculate_matrix(list_str, list_pattern):
         print(prec, "\n")
 
         if prec <= 0.5:
-            print("Precision : 0 (Fake)")
-            return
+            isFake = True
 
         if i != 0:
             prec_all *= prec
@@ -58,6 +58,13 @@ def calculate_matrix(list_str, list_pattern):
         i += 1
 
     print("Precision", mul * len(list_pattern) / prec_all)
+    if(isFake):
+        print("Fake")
+    else:
+        print("Valid")
+    
 
 def remove_non_alphanumeric(s):
     return re.sub(r'\W+', '', s)
+
+
