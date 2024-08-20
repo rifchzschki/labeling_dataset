@@ -57,7 +57,7 @@ def calculate_matrix(list_str, list_pattern):
         mul *= prec
         i += 1
 
-    print("Precision", mul * len(list_pattern) / prec_all)
+    print("Hmean", mul * len(list_pattern) / prec_all)
     if(isFake):
         print("Fake")
     else:
