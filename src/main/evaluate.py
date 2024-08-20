@@ -39,6 +39,7 @@ def calculate_matrix(str_file_path, pattern_file_path):
     idx_found = 0
     prec_all = 0
     mul = 0
+    isFake = False
 
     while i < len(list_pattern):
         prec = 0
@@ -47,18 +48,17 @@ def calculate_matrix(str_file_path, pattern_file_path):
         while j < len(list_str):
             tmp_prec = precision_string(list_str[j], list_pattern[i])
             if prec < tmp_prec:
-                print(list_pattern[i])
-                print(list_str[j])
+                # print(list_pattern[i])
+                # print(list_str[j])
                 prec = tmp_prec
                 idx_found = j
             j += 1
 
-        print(list_pattern[i])
-        print(prec, "\n")
+        # print(list_pattern[i])
+        # print(prec, "\n")
 
         if prec <= 0.5:
-            print("Precision : 0 (Fake)")
-            return
+            isFake = True
 
         if i != 0:
             prec_all *= prec
@@ -70,7 +70,14 @@ def calculate_matrix(str_file_path, pattern_file_path):
         mul *= prec
         i += 1
 
-    print("Precision", mul * len(list_pattern) / prec_all)
+    # print("Hmean", mul * len(list_pattern) / prec_all)
+    if(isFake):
+        return (mul * len(list_pattern) / prec_all), ("Fake")
+    else:
+        return (mul * len(list_pattern) / prec_all), ("Valid")
+    
 
 def remove_non_alphanumeric(s):
     return re.sub(r'\W+', '', s)
+
+
