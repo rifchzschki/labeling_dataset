@@ -5,7 +5,7 @@ import cv2
 
 class Preprocessing:
     def __init__(self, image):
-        self.image = cv2.imread(image, cv2.IMREAD_GRAYSCALE)
+        self.image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     def remove_watermark_fft(self, image):
         gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY) if len(image.shape) == 3 else image
