@@ -92,8 +92,5 @@ class Preprocessing:
         # filtered_image = self.remove_pepper_noise(thresholded_image, kernel_size=(2, 2))
 
         # scaled_image = self.normalize_image(filtered_image)
-        # cv2.imshow("scal", scaled_image)
-        # cv2.waitKey(0)
-        # self.filter_black()
         return self.image
         # return scaled_image
