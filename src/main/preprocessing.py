@@ -7,22 +7,6 @@ class Preprocessing:
     def __init__(self, image):
         self.image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-    def filter_black(self):
-        # Membaca gambar
-        # image = self.image
-        
-        # Konversi gambar ke skala abu-abu
-        gray_image = self.image
-        
-        # Binarisasi gambar (thresholding)
-        # Jika piksel lebih gelap dari threshold tertentu, akan dianggap hitam, sisanya akan menjadi putih
-        _, binary_image = cv2.threshold(gray_image, 100, 255, cv2.THRESH_BINARY)
-        
-        # # Inversi gambar biner untuk membuat latar belakang putih dan objek hitam
-        inverted_image = cv2.bitwise_not(binary_image)
-        
-        self.image = inverted_image
-
     def high_pass_sharpen(self, image):
         kernel = np.array([[-1, -1, -1],
                         [-1,  9, -1],
@@ -79,21 +63,18 @@ class Preprocessing:
         return cv2.resize(image, new_size, interpolation=interpolation)
 
     def run(self):
-        # scale_factor = 2.0
+        scale_factor = 2.0
         
-        # upscaled_image = self.upscale_image(self.image, scale_factor)
+        upscaled_image = self.upscale_image(self.image, scale_factor)
 
-        # denoised_image = self.nlm(upscaled_image)
+        denoised_image = self.nlm(upscaled_image)
 
-        # enhanced_image = self.apply_clahe(denoised_image)
+        enhanced_image = self.apply_clahe(denoised_image)
 
-        # thresholded_image = self.dynamic_threshold(enhanced_image)
+        thresholded_image = self.dynamic_threshold(enhanced_image)
 
-        # filtered_image = self.remove_pepper_noise(thresholded_image, kernel_size=(2, 2))
+        filtered_image = self.remove_pepper_noise(thresholded_image, kernel_size=(2, 2))
 
-        # scaled_image = self.normalize_image(filtered_image)
-        # cv2.imshow("scal", scaled_image)
-        # cv2.waitKey(0)
-        # self.filter_black()
-        return self.image
+        scaled_image = self.normalize_image(filtered_image)
+        return scaled_image
         # return scaled_image
