@@ -1,0 +1,7 @@
+Processing ... --> ../../data/tmp/SLOTextHenry.txt
+Hmean: 0.9836065573770492
+Valid
+Processing ... --> ../../data/tmp/SLOTextHenry.txt
+Hmean: 0.9836065573770492
+Valid
+
