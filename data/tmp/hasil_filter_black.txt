@@ -1,0 +1,267 @@
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/1.txt
+Hmean: 0.35819275473746104
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/2.txt
+Hmean: 0.9377049180327869
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/3.txt
+Hmean: 0.9801980198019806
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/4.txt
+Hmean: 0.991108162301725
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/5.txt
+Hmean: 0.7870851184066452
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/6.txt
+Hmean: 0.8004059656305369
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/7.txt
+Hmean: 0.9742538464929683
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/8.txt
+Hmean: 0.9140163164582599
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/9.txt
+Hmean: 0.5025689086740412
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/10.txt
+Hmean: 0.9287243805445092
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/12.txt
+Hmean: 0.9983535706935581
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/14.txt
+Hmean: 0.0
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/15.txt
+Hmean: 0.6956117477667677
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/18.txt
+Hmean: 0.6735478072521818
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/19.txt
+Hmean: 0.5085318790671742
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/20.txt
+Hmean: 0.5033410402362175
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/21.txt
+Hmean: 0.8426528655003828
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/22.txt
+Hmean: 0.8420933666633457
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/23.txt
+Hmean: 0.96725545119377
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/24.txt
+Hmean: 0.6963455405065123
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/25.txt
+Hmean: 0.0
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/26.txt
+Hmean: 0.8216985326811916
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/27.txt
+Hmean: 0.5061746832629745
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/28.txt
+Hmean: 0.8969404491513692
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/30.txt
+Hmean: 0.8765217391304347
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/31.txt
+Hmean: 0.5218815599966112
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/32.txt
+Hmean: 0.6958146511850238
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/33.txt
+Hmean: 0.5885244254473271
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/34.txt
+Hmean: 0.8449802624559907
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/35.txt
+Hmean: 0.8752172471644848
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/36.txt
+Hmean: 0.8044530943413016
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/37.txt
+Hmean: 0.7716221602231965
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/38.txt
+Hmean: 0.0
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/39.txt
+Hmean: 0.4786538141599235
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/41.txt
+Hmean: 0.8704717396492957
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/42.txt
+Hmean: 0.3859299840588084
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/43.txt
+Hmean: 0.8760092910076318
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/47.txt
+Hmean: 0.6493610225982328
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/48.txt
+Hmean: 0.950666186532229
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/49.txt
+Hmean: 0.8696524670347177
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/50.txt
+Hmean: 0.8494070692496096
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/51.txt
+Hmean: 0.42509801428536764
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/52.txt
+Hmean: 0.9323020173569907
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/53.txt
+Hmean: 0.8363044006836343
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/54.txt
+Hmean: 0.8208149239077073
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/55.txt
+Hmean: 0.9655066214967659
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/56.txt
+Hmean: 0.8652005174644242
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/57.txt
+Hmean: 0.9034464022540762
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/58.txt
+Hmean: 0.8271635401663001
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/60.txt
+Hmean: 0.5745419581277631
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/61.txt
+Hmean: 0.7546832595574775
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/62.txt
+Hmean: 0.7036750614255617
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/63.txt
+Hmean: 0.0
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/64.txt
+Hmean: 0.851379282861144
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/65.txt
+Hmean: 0.0
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/66.txt
+Hmean: 0.7822147201160641
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/67.txt
+Hmean: 0.9029459226538005
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/68.txt
+Hmean: 0.6085755515789298
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/69.txt
+Hmean: 0.9772863475986556
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/70.txt
+Hmean: 0.9879578777649012
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/71.txt
+Hmean: 0.9723406847812841
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/72.txt
+Hmean: 0.0
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/73.txt
+Hmean: 0.9797902193161692
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/74.txt
+Hmean: 0.8954972646935052
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/75.txt
+Hmean: 0.9956331877729258
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/76.txt
+Hmean: 0.9093937375083275
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/77.txt
+Hmean: 0.9492557807920149
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/78.txt
+Hmean: 0.9833097028023833
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/79.txt
+Hmean: 0.8746145832798616
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/80.txt
+Hmean: 0.8024166644776588
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/81.txt
+Hmean: 0.5481754786879689
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/82.txt
+Hmean: 0.9272501305859254
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/83.txt
+Hmean: 0.9406196145079692
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/84.txt
+Hmean: 0.9535197658971267
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/85.txt
+Hmean: 0.8452270620945322
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/86.txt
+Hmean: 0.0
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/87.txt
+Hmean: 0.8828695666910614
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/88.txt
+Hmean: 0.8158940397350991
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/89.txt
+Hmean: 0.9321900172353419
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/90.txt
+Hmean: 0.7852805108088929
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/91.txt
+Hmean: 0.44726176435827164
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/92.txt
+Hmean: 0.0
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/93.txt
+Hmean: 0.9409417080766554
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/94.txt
+Hmean: 0.8659673909075689
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/95.txt
+Hmean: 0.9365978597758723
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/96.txt
+Hmean: 0.843559325238492
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/97.txt
+Hmean: 0.891468736171452
+Valid
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/98.txt
+Hmean: 0.8255369700666696
+Fake
+Processing ... --> /kaggle/working/labeling_dataset/data/value_sip/99.txt
+Hmean: 0.8017487302868554
+Fake
