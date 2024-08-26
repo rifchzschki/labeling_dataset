@@ -4,3 +4,12 @@ Valid
 Processing ... --> ../../data/tmp/SLOTextHenry.txt
 Hmean: 0.9836065573770492
 Valid
+Processing ... --> ../../data/tmp/5.txt
+Hmean: 0.9934296977660971
+Valid
+Processing ... --> ../../data/tmp/11.txt
+Hmean: 0.6345397222672926
+Fake
+Processing ... --> ../../data/tmp/46.txt
+Hmean: 0.9216468858313203
+Valid

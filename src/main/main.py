@@ -8,7 +8,6 @@ if __name__ == "__main__":
     parser.add_argument("--invers", type=str, required=True, help="True means prep->seg")
     parser.add_argument("--output", type=str, required=True, help="Output file")
     parser.add_argument("--target", type=str, required=True, help="Target file SLO (True)")
-    parser.add_argument("--engine", type=str, required=True, help="File .exe checker")
     parser.add_argument("--prep", type=str, required=True, help="Step")
     parser.add_argument("--ocr", type=str, required=True, help="Step")
     parser.add_argument("--verif", type=str, required=True, help="Step")
@@ -39,7 +38,7 @@ if __name__ == "__main__":
         try:
             print("Menjalankan verifikasi...")
             current_time = time.time()
-            subprocess.run(["../../.venv/Scripts/python", "verification.py", str(args.target), str(args.output), str(args.engine)], check=True)
+            subprocess.run(["../../.venv/Scripts/python", "verification.py", str(args.target), str(args.output)], check=True)
             print(f"Duration: {time.time()-current_time}")
             print("OCR engine selesai.")
         except subprocess.CalledProcessError as e:
