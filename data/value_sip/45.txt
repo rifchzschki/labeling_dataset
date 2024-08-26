@@ -8,15 +8,8 @@ Rt 33/10, Winong, Gemarang, KAB. MADIUN, Jawa Tim
 900/1 phasa
 TN-C-S
 9A Jumlah
-2
-2
-2
-2
-1
-4
 PT Perusahaan Listrik Negara (Persero) ULP Gemarang
 Rodger Tufts
-5667406 / 2023-09-30 00:00:00
+5667406/2023-09-30 00:00:00
 Sertifikat Laik Operasi ini berlaku sampai dengan tanggal 2038-10-01 00:00:00
-Tanggal 2023-10-01 08:02:28
-Rodger Tufts
+2023-10-01 08:02:28

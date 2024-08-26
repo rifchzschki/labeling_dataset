@@ -21,6 +21,20 @@ def dec_point(p1,p2):
     difference = (p1[0] - p2[0], p1[1] - p2[1])
     return math.sqrt(difference[0]**2 + difference[1]**2)
 
+def get_three_medians(arr):
+    sorted_arr = sorted(arr)
+    median_index = len(sorted_arr) // 2
+
+    if len(arr) % 2 == 0:
+        # Jika panjang array genap, ambil dua elemen di tengah
+        median_indices = [median_index - 1, median_index, median_index + 1]
+    else:
+        # Jika panjang array ganjil, ambil elemen di tengah serta dua elemen tetangganya
+        median_indices = [median_index - 1, median_index, median_index + 1]
+
+    # Mengambil tiga median berdasarkan sorted array dan map_points
+    return {i: arr[i] for i in median_indices}
+
 
 def get_horizontal(boxes):
     map_points = {}
@@ -48,7 +62,11 @@ def get_horizontal(boxes):
     list_length = list(list_length)
     arr = np.array(list_length)
     sorted_arr = np.sort(arr)
-    return map_points[sorted_arr[len(sorted_arr)//2]]
+    if(len(list_length)%2==0):
+        return [map_points[sorted_arr[(len(sorted_arr)//2)]], map_points[sorted_arr[(len(sorted_arr)//2)+1]]]
+    else:
+        return [map_points[sorted_arr[(len(sorted_arr)//2)-1]],map_points[sorted_arr[len(sorted_arr)//2]], map_points[sorted_arr[(len(sorted_arr)//2)+1]]]
+
 
 def getBound(coordinates):
     polygon = Polygon(coordinates)
