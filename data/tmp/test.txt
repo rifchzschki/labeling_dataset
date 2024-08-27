@@ -1,57 +1,69 @@
-5
+NoS1F35814-10-20
 PT SERTIFIKASI INSTALASI PRIMA
+5
+WILAYAH JAWA TENGAH I
 SIP
-o.S1F35B.14-10-20224
-5
-WILAYAH JAWA TENGAH 
 AREA KUDUSS
-JL EKAPRAYA4A1O.12RT.01RW 01 KAB.KUDUS TELP081229071964
+5
+JL EKAPRAYA4A1O.12RT.01RW.01KA8.KUOUS TELP081229071964
+Akreditasi Mentn Energi dan Sumber Deya MineralNomor 421STL07/L4/2021 Tahun 2021
 2
-Akroditasi Menton Energidan Sumber Daya Mineral Homor 421St/TL07/DJL4/2021 Tahun2021
-YKAN
 SERTIFIKAT LAIK OPERASI
+YKAN
 5
-Nomor Sertifikat0052.0.P.3.421.3519.J23
-Nomor Registrasi:J233005210802
+Nomor Sertiikat :0037.0.P.3.427.3509.J23
 5
-Dongan ini menyatakan batwa instalas pemanfasten tenaga listrik tegangan rendah
-Hama Pomilik
-Prapto
-Homor Identitas Instalasi Tenega Listrk(D
-1092023.359788
+Nomor RegistrasiJ233003710802
+Sn
+Dengan ini menyataken bahwa instalasi penanfaatan tenaga listrik tegangan rendah
+Nama Pemilik
+JUMALI
+Nomor Identitas Instalasi Tenaga Listrik(NiDl)
+109.2023.359456
 Alamat Pemilik
-Rt 33/10.Winong.Gemarang.KAB MADIUNJawa Tm
-Titik Koordinat
+DUSUN KR.Gunungmalang.Sumberjambe.KAB.JEMBERJawa Tim
+Titik Keordinat
+0581336112.432897
 5
-1.465909118651860
-Daya Tersambung/Jumah phasa
-900/1phase
+Daye Tersambung/Jumlah phase
+900/1phasa
+5
 Tipe Sistem Pembumian
-THCS
+TN-C-S
 Kapasitas Arus gawai proteksi (dalam Ampere)
-9A Juah
+9A Jumlah
+2
 panel hubung bagi utama
-Jumlah panel hubung bagi cabang
+3
+Jumiah panel hubung bagi cabang
+5
+Jumlah Titik Kotak Kontak 3 phase
 2
-Jumlah Titik Kotak Kontak 3 phasa
+5
+Jumiah Tik Kotsk Kontak 1 Phasa
 2
-Jumlah Titk Kotak Kontak 1 Phasa
+5
+Jumiah tik lampu1 phasa
 2
-Jumlah ttik lampu1 phasa
 2
-Jumlah ttik saklar1 phase
-1
-Penyedia tenaga listrik
-PT Perusahasn Listrk Hegara(Persero ULP Gemarang
+Jumish ttik sakiar, 1 phase
+5
+PT Perusahaan Listrik Negara (Prsero) ULP Surmberjambe
+Penyedie tenage listrik
+2
 Penanggung Jawab Teknik
-Rodger Tufts
-Nomor Lhpp/langgal
-Idah sesual dengan ketentuan keselanatan ketenagahstrikan sehingga dinyatakan
-5067406/2023-09-3000:00.00
+Gayle Simonato
+Nomor Lhpp/taniggal
+5667147/2023-09-30000000
+tesh sesusi dengan ketentuan keselamatan ketenagalistrikan sehingga dinyata
 LAIK OPERASI
-Sertifikat Laik Operasi ini beraku sampai dengan tanggal2038-10-01 00.00.00 sepanjang tdak ada perubahan kapasitasperubahan instalasidirekondisi atau direlokasi
-Ditetapkan di KAB.KUDUS Pada
-Tanggal 2023-10-01 08:0228
+sampal dengan tanggal2038-10-01 000000 sepanjang tdak ada
+kapestas.perubahan nstalasi, dirakondisi alau drelokas
+Sarurkat Laik Operasi mibariaku
+Ditatapkan di KABKUDUS Pada
+Tangg2023-10-010802.20
+5
 Manager Area
-mh ps.suangesamgo.io
-Rodger Tufts
+Sn
+Gayla Simonala
+S
