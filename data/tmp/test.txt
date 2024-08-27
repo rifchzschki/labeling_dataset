@@ -1,69 +1,67 @@
-NoS1F35814-10-20
 PT SERTIFIKASI INSTALASI PRIMA
+No.Sen1F35B.14-10-2022.4
 5
-WILAYAH JAWA TENGAH I
 SIP
+WILAYAH JAWA TENGAH 
+5
 AREA KUDUSS
-5
-JL EKAPRAYA4A1O.12RT.01RW.01KA8.KUOUS TELP081229071964
-Akreditasi Mentn Energi dan Sumber Deya MineralNomor 421STL07/L4/2021 Tahun 2021
+LEKAPRAYA4A1O.12RT.01RW01KABKUDUS TELP.081229071964
+Akreditasi Menten EnergidanSuiber Deya Miner Nomor 421STL 07/JL/2021Tahun2021
 2
-SERTIFIKAT LAIK OPERASI
 YKAN
-5
-Nomor Sertiikat :0037.0.P.3.427.3509.J23
-5
-Nomor RegistrasiJ233003710802
-Sn
-Dengan ini menyataken bahwa instalasi penanfaatan tenaga listrik tegangan rendah
-Nama Pemilik
-JUMALI
-Nomor Identitas Instalasi Tenaga Listrik(NiDl)
-109.2023.359456
-Alamat Pemilik
-DUSUN KR.Gunungmalang.Sumberjambe.KAB.JEMBERJawa Tim
-Titik Keordinat
-0581336112.432897
-5
-Daye Tersambung/Jumlah phase
-900/1phasa
-5
-Tipe Sistem Pembumian
-TN-C-S
-Kapasitas Arus gawai proteksi (dalam Ampere)
-9A Jumlah
+SERTIFIKAT LAIK OPERASI
 2
-panel hubung bagi utama
-3
+Nomor Sertikat:0052.0.P.3.421.3519.J23
+5
+Nomor RegistresiJ233005210802
+Dengan inime
+tenaga istrk tegargan rendah
+Nema Pemlik
+Prapto
+Nomor ldentites Instalasi Tenege Listrik(t
+1092023.350788
+2
+Alamet Pemilk
+R 3.Wnng.Gmrng.KB Jwe Tm
+Titk Koordinat
+1465069118851800
+5
+Deya Tesambung/Jumish phase
+900/1phase
+5
+Tipe Sisten Pembumien
+THCS
+Kapastas Arus gawa proteks (dalarn Ampere)
+9A Juntih
+2
+penel hubung bagi utame
+2
+2
 Jumiah panel hubung bagi cabang
+2
+umlah Titik Kotak Kontak 3 phase
 5
-Jumlah Titik Kotak Kontak 3 phase
+2
+Jumiah Titk Kotak Kontak 1 Phase
 2
 5
-Jumiah Tik Kotsk Kontak 1 Phasa
+Jumlah ttik lampu 1 phese
 2
-5
-Jumiah tik lampu1 phasa
-2
-2
-Jumish ttik sakiar, 1 phase
-5
-PT Perusahaan Listrik Negara (Prsero) ULP Surmberjambe
-Penyedie tenage listrik
+Jumleh ttik saklar, 1 phase
+Penyedia tenage listrik
+PT Porusahan LiskHegre PgrroUP Gemran
 2
 Penanggung Jawab Teknik
-Gayle Simonato
-Nomor Lhpp/taniggal
-5667147/2023-09-30000000
-tesh sesusi dengan ketentuan keselamatan ketenagalistrikan sehingga dinyata
-LAIK OPERASI
-sampal dengan tanggal2038-10-01 000000 sepanjang tdak ada
-kapestas.perubahan nstalasi, dirakondisi alau drelokas
-Sarurkat Laik Operasi mibariaku
-Ditatapkan di KABKUDUS Pada
-Tangg2023-10-010802.20
+Roager Tufts
 5
+Nomor Lhpp/Langgel
+5667406/2023-09-30000000
+5
+tdah sesuai dengan ketentuan keselamatan ketenagalistrikan sehungge dinyeteks
+LAIK OPERASI
+Sertfikat Laik Operasi in beraku sampa dengan tanggal 2038-10-01 00 00 00 sepanjang tdsk
+nan instalasi direkondisi atau direlokasi
+Ditetapkan di KAB.KUDUS Pada
+Tanggal2023-10-01 08.02:28
 Manager Area
-Sn
-Gayla Simonala
-S
+Rodger Tufts
