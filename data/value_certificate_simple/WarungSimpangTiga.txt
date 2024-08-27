@@ -11,5 +11,5 @@ TN-C-S
 PT Perusahaan Listrik Negara (Persero) ULP Mumbulsari
 Win Middlebrook
 5667139/2023-09-30 00:00:00
-Sertifikat Laik Operasi ini berlaku sampai dengan tanggal 2038-10-01 00:00:00
+2038-10-01 00:00:00
 2023-10-01 08:02:27
