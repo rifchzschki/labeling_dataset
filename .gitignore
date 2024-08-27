@@ -5,11 +5,10 @@
 /data/output_rusak
 /data/output_segmentation
 /data/output_segmentation_rusak
-/data/input
 /.venv
 venv
 /.vscode
 /src/__pycache__
-/src/main/__pycache__
+/src/experiment
 data.zip
 /.python-version

@@ -1,67 +1,51 @@
 PT SERTIFIKASI INSTALASI PRIMA
-No.Sen1F35B.14-10-2022.4
-5
+NS3584102
+WAYA JAWA TEMGA
 SIP
-WILAYAH JAWA TENGAH 
-5
-AREA KUDUSS
-LEKAPRAYA4A1O.12RT.01RW01KABKUDUS TELP.081229071964
-Akreditasi Menten EnergidanSuiber Deya Miner Nomor 421STL 07/JL/2021Tahun2021
-2
+AREAKUOSS
+EKAPRAYAA 12RT 01R 1KA KLOUS TELP 1Z
+Akrs M EnrgdnSumyHr 1s7202
+SERTIFIKAT LAIK OPERAS
 YKAN
-SERTIFIKAT LAIK OPERASI
-2
-Nomor Sertikat:0052.0.P.3.421.3519.J23
-5
-Nomor RegistresiJ233005210802
-Dengan inime
-tenaga istrk tegargan rendah
-Nema Pemlik
-Prapto
-Nomor ldentites Instalasi Tenege Listrik(t
-1092023.350788
-2
-Alamet Pemilk
-R 3.Wnng.Gmrng.KB Jwe Tm
-Titk Koordinat
-1465069118851800
-5
-Deya Tesambung/Jumish phase
-900/1phase
-5
-Tipe Sisten Pembumien
+Nomor Sertikat0037.0.P.3.4273509.J23
+Nomor RegistrasiJ233003710802
+Dengan ini manyatakan bahwa instals pemaastan lenaga str tegagen red
+Hama Pomilik
+JUMAL
+Nomor idenitas instalasi Tnega Lisrta
+1092023350450
+Alamat Pomilik
+DUSKRg K
+Titik Koordinet
+0581336.112432997
+Daya Tsambung /Junah phasa
+0/1phs
+Tipe Ststen Pembumran
 THCS
-Kapastas Arus gawa proteks (dalarn Ampere)
-9A Juntih
-2
-penel hubung bagi utame
-2
-2
-Jumiah panel hubung bagi cabang
-2
-umlah Titik Kotak Kontak 3 phase
+Kapasas Arus gawai proteks (dalam Anre
+SAJurr
+panal hubung bagi utam
+3
+Jumlah panel hubung bagi cabang
 5
+Jurnlah Titk Kotak Kontak 3 phas
 2
-Jumiah Titk Kotak Kontak 1 Phase
+Jumlah Tiik Kotak Kontsk 1 Phse
 2
+Jumlah tik lampu 1 phase
+2
+Jumlah ik saklar 1 phasa
 5
-Jumlah ttik lampu 1 phese
-2
-Jumleh ttik saklar, 1 phase
-Penyedia tenage listrik
-PT Porusahan LiskHegre PgrroUP Gemran
-2
+Ponyodia tonaga listrk
+PT Psshn LlPrUS
 Penanggung Jawab Teknik
-Roager Tufts
-5
-Nomor Lhpp/Langgel
-5667406/2023-09-30000000
-5
-tdah sesuai dengan ketentuan keselamatan ketenagalistrikan sehungge dinyeteks
+Geyle Son
+Nomor Lhpp/tanggal
+5667147/2023-09-30000000
+dlah sosual dengan kotentuan keselamatan keenogabstrikan setngga dnya
 LAIK OPERASI
-Sertfikat Laik Operasi in beraku sampa dengan tanggal 2038-10-01 00 00 00 sepanjang tdsk
-nan instalasi direkondisi atau direlokasi
-Ditetapkan di KAB.KUDUS Pada
-Tanggal2023-10-01 08.02:28
+R
+tpn KAB KUDS P
+T23-10-01080228
 Manager Area
-Rodger Tufts
+Gayle Smcnalo

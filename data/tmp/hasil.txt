@@ -22,3 +22,9 @@ Fake
 Processing ... --> ../../data/tmp/5.txt
 Hmean: 0.7987042956934115
 Fake
+Processing ... --> ../../data/tmp/11.txt
+Hmean: 0.4112137093110125
+Fake
+Processing ... --> ../data/tmp/11.txt
+Hmean: 0.4112137093110125
+Fake
