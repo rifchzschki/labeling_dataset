@@ -28,7 +28,7 @@ if __name__ == "__main__":
         try:
             print("Menjalankan OCR engine...")
             current_time = time.time()
-            subprocess.run(["../../.venv/Scripts/python", "engine.py", dir_tmp+str(os.path.basename(args.image_name)), str(args.output)], check=True)
+            subprocess.run(["../../.venv/Scripts/python", "engine.py", (args.image_name), str(args.output)], check=True)
             print(f"Duration: {time.time()-current_time}")
             print("OCR engine selesai.")
         except subprocess.CalledProcessError as e:
