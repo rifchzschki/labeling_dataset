@@ -5,7 +5,7 @@ DIDI
 I.09.2023.359905
 Dsn. Gom, Warungpring, Warungpring, KAB. PEMALANG, Jawa Ten
 -5.580120, 112.493237
-900 / 1 phasa
+900/1 phasa
 TN-C-S
 9A Jumlah
 2
@@ -16,7 +16,6 @@ TN-C-S
 3
 PT Perusahaan Listrik Negara (Persero) ULP Warungpring
 Ly Clowton
-5667547 / 2023-09-30 00:00:00
-Sertifikat Laik Operasi ini berlaku sampai dengan tanggal 2038-10-01 00:00:00 sepanjang tidak ada perubahan kapasitas, perubahan instalasi, direkondisi atau direlokasi
-Ditetapkan di KAB. KUDUS Pada Tanggal 2023-10-01 08:02:27
-Ly Clowton
+5667547/2023-09-30 00:00:00
+Sertifikat Laik Operasi ini berlaku sampai dengan tanggal 2038-10-01 00:00:00
+2023-10-01 08:02:27

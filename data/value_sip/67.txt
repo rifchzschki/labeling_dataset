@@ -1,48 +1,15 @@
-PT SERTIFIKASI INSTALASI PRIMA
-No.Seri 1F35B.14-10-2022.4
-WILAYAH JAWA TENGAH 1
-AREA KUDUS 5
-JL.EKAPRAYA 4A NO.12 RT.01 RW.01 KAB.KUDUS TELP.081229071964
-Akreditasi Menteri Energi dan Sumber Daya Mineral Nomor 421 St/TL.07/DJL.4/2021 Tahun 2021
-SERTIFIKAT LAIK OPERASI
-Nomor Sertifikat : 0076.0.P.3.427.3404.J23
-Nomor Registrasi : J233007610802
-Dengan ini menyatakan bahwa instalasi pemanfaatan tenaga listrik tegangan rendah:
-Nama Pemilik
+1F35B.14-10-2022.4
+0076.0.P.3.427.3404.J23
+J233007610802
 henry setyo nugroho
-Nomor Identitas Instalasi Tenaga Listrik(NIDI)
-: 1.09.2023.334820
-Alamat Pemilik
-: DS DUSUN Sidoagung.GodeanKAB.SLEMANDI Yogya
-Titik Koordinat
-: 0.424549,119.487391
-Daya Tersambung /Jumlah phasa
-: 900/1 phasa
-Tipe Sistem Pembumian
-: TN-C-S
-Kapasitas Arus gawai proteksi (dalam Ampere)
-: 9A Jumlah
-panel hubung bagi utama
-: 5
-Jumlah panel hubung bagi cabang
-: 4
-Jumlah Titik Kotak Kontak 3 phasa.
-: 1
-Jumlah Titik Kotak Kontak 1 Phasa
-: 4
-Jumlah titik lampu, 1 phasa
-: 4
-Jumlah titik saklar, 1 phasa
-: 2
-Penyedia tenaga listrik
-: PT Perusahaan Listrik Negara (Persero) ULP Godean
-Penanggung Jawab Teknik
-: Amanda Audrey
-Nomor Lhpp/tanggal
-: 5642665/2023-09-28 00:00:00
-telah sesuai dengan ketentuan keselamatan ketenagalistrikan sehingga dinyatakan
-LAIK OPERASI
-Sertifikat Laik Operasi ini berlaku sampai dengan tanggal 2038-10-01 00:00:00 sepanjang tidak ada perubahan kapasitas, perubahan instalasi, direkondisi atau direlokasi
-Ditetapkan di KAB.KUDUS Pada Tanggal 2023-10-01 08:02:31
-Manager Area
+1.09.2023.334820
+DS DUSUN Sidoagung.GodeanKAB.SLEMANDI Yogya
+0.424549,119.487391
+900/1 phasa
+TN-C-S
+9A Jumlah
+PT Perusahaan Listrik Negara (Persero) ULP Godean
 Amanda Audrey
+5642665/2023-09-28 00:00:00
+Sertifikat Laik Operasi ini berlaku sampai dengan tanggal 2038-10-01 00:00:00
+2023-10-01 08:02:31
